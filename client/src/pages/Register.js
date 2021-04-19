@@ -28,7 +28,7 @@
         props.history.push('/');
         },
         onError(err) {
-        setErrors(err.graphqlerrors[0].extensions.exception.errors);
+        setErrors(err.graphQLErrors[0].extensions.exception.errors);
         },
         variables: values
     });
