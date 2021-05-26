@@ -9,9 +9,9 @@
 
     function Home() {
     const { user } = useContext(AuthContext);
-    const { loading,error, data} = useQuery(FETCH_POSTS_QUERY)
-    
+    const { loading, error, data} = useQuery(FETCH_POSTS_QUERY)
     let posts = data.getPosts
+
     return (
         <Grid columns={3}>
         <Grid.Row className="page-title">
@@ -28,7 +28,7 @@
             ) : (
             <Transition.Group>
                 {posts && posts.map((post) => (
-                    <Grid.Column key={post.id} style={{ marginBottom: 25 }}>
+                    <Grid.Column key={post.id} style={{ marginBottom: 15 }}>
                     <PostCard post={post} />
                     </Grid.Column>
                 ))}

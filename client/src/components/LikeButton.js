@@ -30,7 +30,7 @@
         </Button>
         )
     ) : (
-        <Button as={Link} to="/login" color="teal" basic>
+        <Button as={Link} to="/login" color="yellow" basic>
         <Icon name="heart" />
         </Button>
     );
